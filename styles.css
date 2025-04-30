@@ -1,21 +1,19 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 2px; /* Optional: Adds spacing between rows */
-    justify-content: center;
-    align-items: center;
     height: 500px;
     width: 500px;
     border: 1px solid;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #c99494;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin: 20px auto;
-    overflow: hidden;
 }
 
+.branch {
+    display: flex;
+    flex: 1;
+}
+.branch *{
+    /* border: 1px solid; */
+    flex: 1;
+}
 h1 {
     text-align: center;
 }
@@ -38,16 +36,8 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-.branch {
-    display: flex;
+h1 {
+    color: #c92828;
+    font-size: 2rem;
+    margin: 20px 0;
 }
-
-.branch div {
-    flex: 1;
-    aspect-ratio: 1 / 1; /* Makes the cells square */
-    border: 1px solid #ccc; /* Optional: Adds a border to each cell */
-    box-sizing: border-box;
-    transition: background-color 0.2s ease;
-}
-
